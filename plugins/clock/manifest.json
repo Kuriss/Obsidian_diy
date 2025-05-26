@@ -1,0 +1,10 @@
+{
+  "id": "your-plugin",
+  "name": "Your Plugin",
+  "version": "1.0.0",
+  "minAppVersion": "0.12.0",
+  "description": "Time",
+  "author": "Kuriss",
+  "authorUrl": "",
+  "isDesktopOnly": false
+}

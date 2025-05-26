@@ -1,0 +1,10 @@
+{
+  "id": "inspiration-card",
+  "name": "Inspiration Card",
+  "version": "1.0.0",
+  "minAppVersion": "0.12.0",
+  "description": "点击按钮，随机弹出一张酷炫灵感卡片，激发你的创造力！",
+  "author": "Kuriss",
+  "authorUrl": "",
+  "isDesktopOnly": false
+}

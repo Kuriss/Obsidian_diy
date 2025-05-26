@@ -1,0 +1,10 @@
+{
+  "id": "score-tracker",
+  "name": "Score Tracker",
+  "version": "1.0.0",
+  "minAppVersion": "0.12.0",
+  "description": "积分奖励记录插件",
+  "author": "ChatGPT",
+  "authorUrl": "https://openai.com",
+  "main": "main.js"
+}

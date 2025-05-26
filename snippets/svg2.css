@@ -1,0 +1,25 @@
+/* 低调霓虹：默认轻微发光，悬浮时才明显 */
+svg, .clickable-icon {
+    filter: drop-shadow(0 0 2px #00ffe7) drop-shadow(0 0 1px #ff00cc);
+    transition: filter 0.2s, transform 0.2s;
+}
+
+/* 悬浮时才明显发光和微微放大 */
+.clickable-icon:hover, svg:hover {
+    filter: drop-shadow(0 0 8px #00ffe7) drop-shadow(0 0 4px #ff00cc);
+    transform: scale(1.08);
+}
+
+/* 搜索栏放大镜：仅悬浮时高亮 */
+.workspace-leaf-content[data-type="search"] .clickable-icon:hover,
+.workspace-leaf-content[data-type="search"] svg:hover {
+    filter: drop-shadow(0 0 12px #ffea00) drop-shadow(0 0 4px #00ffe7);
+    color: #ffea00 !important;
+}
+
+/* 设置按钮：仅悬浮时高亮 */
+.workspace-leaf-content[data-type="settings"] .clickable-icon:hover,
+.workspace-leaf-content[data-type="settings"] svg:hover {
+    filter: drop-shadow(0 0 12px #00ffe7) drop-shadow(0 0 4px #ff00cc);
+    color: #00ffe7 !important;
+}

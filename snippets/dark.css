@@ -1,0 +1,48 @@
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #00ffe7 0%, #ff00cc 100%);
+    border-radius: 8px;
+    transition: box-shadow 0.2s;
+}
+::-webkit-scrollbar-thumb:hover {
+    box-shadow: 0 0 8px #00ffe7, 0 0 4px #ff00cc;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    background: #222;
+}
+
+/* 侧边栏美化 */
+.workspace-split.mod-left-split,
+.workspace-split.mod-right-split {
+    background: rgba(20, 20, 30, 0.92) !important;
+    /* border-right: 2px solid #00ffe7; */
+    box-shadow: 2px 0 12px #00ffe733;
+}
+
+/* 顶部标题栏美化 */
+.titlebar {
+    background: linear-gradient(90deg, #00ffe7 0%, #ff00cc 100%);
+    color: #fff;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, #00ffe7 0%, #ff00cc 100%);
+    margin: 24px 0;
+    box-shadow: 0 0 4px #00ffe7, 0 0 4px #ff00cc;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: auto;
+}
+hr:hover {
+    opacity: 1;
+}
+
+
+/* 悬浮按钮美化 */
+button:hover, .clickable-icon:hover {
+    background: linear-gradient(90deg, #00ffe744 0%, #ff00cc44 100%) !important;
+    box-shadow: 0 0 8px #00ffe7, 0 0 2px #ff00cc;
+    transition: all 0.2s;
+}

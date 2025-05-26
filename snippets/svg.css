@@ -1,0 +1,80 @@
+/* 通用图标霓虹发光效果 */
+body.theme-dark svg, 
+body.theme-dark .clickable-icon {
+    filter: drop-shadow(0 0 0.3px #00ffe7) drop-shadow(0 0 0.2px #ff00cc);
+    transition: filter 0.1s, transform 0.2s;
+}
+body.theme-light svg, 
+body.theme-light .clickable-icon {
+    filter: none !important;
+}
+
+/* 鼠标悬浮时放大并变色 */
+.clickable-icon:hover, svg:hover {
+    filter: drop-shadow(0 0 12px #ff00cc) drop-shadow(0 0 6px #00ffe7);
+    transform: scale(1.15) rotate(-8deg);
+}
+/* 搜索栏放大镜：仅深色模式下，悬浮时微弱发光 */
+body.theme-dark .workspace-leaf-content[data-type="search"] .clickable-icon,
+body.theme-dark .workspace-leaf-content[data-type="search"] svg {
+    filter: none;
+    color: inherit !important;
+    transition: filter 0.2s, color 0.2s;
+}
+body.theme-dark .workspace-leaf-content[data-type="search"] .clickable-icon:hover,
+body.theme-dark .workspace-leaf-content[data-type="search"] svg:hover {
+    filter: drop-shadow(0 0 1px #ffea00) drop-shadow(0 0 0.5px #00ffe7);
+    color: #ffea00 !important;
+}
+body.theme-light .workspace-leaf-content[data-type="search"] .clickable-icon,
+body.theme-light .workspace-leaf-content[data-type="search"] svg {
+    filter: none !important;
+    color: inherit !important;
+}
+
+/* 设置按钮：仅深色模式下，悬浮时微弱发光 */
+body.theme-dark .workspace-leaf-content[data-type="settings"] .clickable-icon,
+body.theme-dark .workspace-leaf-content[data-type="settings"] svg {
+    filter: none;
+    color: inherit !important;
+    transition: filter 0.2s, color 0.2s;
+}
+body.theme-dark .workspace-leaf-content[data-type="settings"] .clickable-icon:hover,
+body.theme-dark .workspace-leaf-content[data-type="settings"] svg:hover {
+    filter: drop-shadow(0 0 1px #00ffe7) drop-shadow(0 0 0.5px #ff00cc);
+    color: #00ffe7 !important;
+}
+body.theme-light .workspace-leaf-content[data-type="settings"] .clickable-icon,
+body.theme-light .workspace-leaf-content[data-type="settings"] svg {
+    filter: none !important;
+    color: inherit !important;
+}
+
+/* 文件树图标：仅深色模式下，悬浮时微弱发光 */
+body.theme-dark .nav-file-title .clickable-icon,
+body.theme-dark .nav-folder-title .clickable-icon {
+    filter: none;
+    transition: filter 0.2s;
+}
+body.theme-dark .nav-file-title .clickable-icon:hover,
+body.theme-dark .nav-folder-title .clickable-icon:hover {
+    filter: drop-shadow(0 0 1px #00ffe7) drop-shadow(0 0 0.5px #ff00cc);
+}
+body.theme-light .nav-file-title .clickable-icon,
+body.theme-light .nav-folder-title .clickable-icon {
+    filter: none !important;
+}
+
+body.theme-dark .side-dock-ribbon-action,
+body.theme-dark .side-dock-ribbon-action svg {
+    filter: drop-shadow(0 0 0.5px #00ffe7) drop-shadow(0 0 0.2px #ff00cc);
+    transition: filter 0.2s, transform 0.2s;
+}
+body.theme-light .side-dock-ribbon-action,
+body.theme-light .side-dock-ribbon-action svg {
+    filter: none !important;
+}
+.side-dock-ribbon-action:hover, .side-dock-ribbon-action svg:hover {
+    filter: drop-shadow(0 0 16px #ff00cc) drop-shadow(0 0 8px #00ffe7);
+    transform: scale(1.2) rotate(8deg);
+}
